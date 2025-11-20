@@ -1,0 +1,42 @@
+identity:
+  name: llm_chat
+  author: ELECAR-gh01
+  label:
+    en_US: Chat with LLM
+    zh_Hans: LLM 對話
+description:
+  human:
+    en_US: Chat with Stima AI models
+    zh_Hans: 與 Stima AI 模型對話
+  llm: Use this tool to chat with Stima AI models including GPT-4o, Claude, and DeepSeek
+parameters:
+  - name: model
+    type: string
+    required: true
+    label:
+      en_US: Model
+      zh_Hans: 模型
+    human_description:
+      en_US: Select the AI model
+      zh_Hans: 選擇 AI 模型
+    llm_description: The model to use for chat
+    form: llm
+    options:
+      - gpt-4o
+      - gpt-4o-mini
+      - claude-3-5-sonnet-20241022
+      - deepseek-chat
+  - name: message
+    type: string
+    required: true
+    label:
+      en_US: Message
+      zh_Hans: 訊息
+    human_description:
+      en_US: Your message to the AI
+      zh_Hans: 您要發送給 AI 的訊息
+    llm_description: The message to send to the AI model
+    form: llm
+extra:
+  python:
+    source: tools/llm_chat.py
