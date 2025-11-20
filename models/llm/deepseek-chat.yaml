@@ -1,0 +1,43 @@
+model: deepseek-chat
+label:
+  en_US: DeepSeek Chat
+  zh_Hant: DeepSeek Chat
+model_type: llm
+features:
+  - agent-thought
+model_properties:
+  mode: chat
+  context_size: 64000
+  max_tokens: 4096
+parameter_rules:
+  - name: temperature
+    label:
+      en_US: Temperature
+      zh_Hant: 溫度
+    type: float
+    default: 0.7
+    min: 0
+    max: 2
+    precision: 1
+  - name: max_tokens
+    label:
+      en_US: Max Tokens
+      zh_Hant: 最大 Token 數
+    type: int
+    default: 4096
+    min: 1
+    max: 4096
+  - name: top_p
+    label:
+      en_US: Top P
+      zh_Hant: Top P
+    type: float
+    default: 1
+    min: 0
+    max: 1
+    precision: 2
+pricing:
+  input: '0.0001'
+  output: '0.0002'
+  unit: '0.001'
+  currency: USD
