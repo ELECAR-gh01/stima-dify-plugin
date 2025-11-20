@@ -1,1 +1,0 @@
-# stima-dify-plugin

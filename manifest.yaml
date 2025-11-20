@@ -1,0 +1,18 @@
+version: 0.0.1
+type: plugin
+author: ELECAR-gh01
+name: stima-dify-plugin
+label:
+  en_US: Stima API
+  zh_Hant: Stima API 串接
+description:
+  en_US: Unified models for Stima API.
+  zh_Hant: Stima API 預設模型清單，無需自行添加模型設定。
+icon: provider/icon.svg 
+tags:
+  - model-provider
+resource:
+  memory: 256MB
+plugins:
+  models:
+    - provider: provider/provider.yaml
