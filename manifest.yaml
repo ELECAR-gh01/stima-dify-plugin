@@ -1,20 +1,29 @@
-version: 0.0.1
-type: plugin
+version: 0.0.3
+type: plugin  # 必須是 plugin
 author: ELECAR-gh01
-name: stima-dify-plugin
+name: stima-dify-plugin  # 不能改變
 label:
   en_US: Stima API
-  zh_Hant: Stima API 串接
+  zh_Hans: Stima API 串接
 description:
   en_US: Unified models for Stima API
-  zh_Hant: Stima API 預設模型清單，無需自行添加模型設定
-icon: icon.svg  # 建議改為 svg，或保持 icon.png
-tags:
-  - model-provider
-  - llm
-  - openai-compatible
+  zh_Hans: Stima API 預設模型清單，無需自行添加模型設定
+icon: icon.png
 resource:
-  memory: 256MB
+  memory: 268435456  # 256MB in bytes
+  permission: {}
 plugins:
-  models:
-    - provider: provider/provider.yaml
+  tools:  # 注意是 tools，不是 models
+    - provider/stima.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: '3.12'
+    entrypoint: main
+created_at: 2025-01-01T00:00:00.000000+08:00
+tags:
+  - utilities  # 使用預定義標籤
