@@ -6,11 +6,13 @@ label:
   en_US: Stima API
   zh_Hant: Stima API 串接
 description:
-  en_US: Unified models for Stima API.
-  zh_Hant: Stima API 預設模型清單，無需自行添加模型設定。
-icon: provider/icon.png
+  en_US: Unified models for Stima API
+  zh_Hant: Stima API 預設模型清單，無需自行添加模型設定
+icon: icon.svg  # 建議改為 svg，或保持 icon.png
 tags:
   - model-provider
+  - llm
+  - openai-compatible
 resource:
   memory: 256MB
 plugins:
