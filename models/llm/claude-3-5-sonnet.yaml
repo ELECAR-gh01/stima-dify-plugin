@@ -1,0 +1,45 @@
+model: claude-3-5-sonnet-20241022
+label:
+  en_US: Claude 3.5 Sonnet
+  zh_Hant: Claude 3.5 Sonnet
+model_type: llm
+features:
+  - agent-thought
+  - vision
+  - stream-tool-call
+model_properties:
+  mode: chat
+  context_size: 200000
+  max_tokens: 8192
+parameter_rules:
+  - name: temperature
+    label:
+      en_US: Temperature
+      zh_Hant: 溫度
+    type: float
+    default: 0.7
+    min: 0
+    max: 1
+    precision: 1
+  - name: max_tokens
+    label:
+      en_US: Max Tokens
+      zh_Hant: 最大 Token 數
+    type: int
+    default: 4096
+    min: 1
+    max: 8192
+  - name: top_p
+    label:
+      en_US: Top P
+      zh_Hant: Top P
+    type: float
+    default: 1
+    min: 0
+    max: 1
+    precision: 2
+pricing:
+  input: '0.003'
+  output: '0.015'
+  unit: '0.001'
+  currency: USD
