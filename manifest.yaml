@@ -8,7 +8,7 @@ label:
 description:
   en_US: Unified models for Stima API.
   zh_Hant: Stima API 預設模型清單，無需自行添加模型設定。
-icon: provider/icon.svg 
+icon: provider/icon.png
 tags:
   - model-provider
 resource:
