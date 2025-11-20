@@ -46,10 +46,10 @@ provider_credential_schema:
         zh_Hant: API 基礎網址
       type: text-input
       required: false
-      default: https://api.stima.ai/v1  # 改成你們的實際網址
+      default: https://api.stima.tech/v1  # 改成你們的實際網址
       placeholder:
-        en_US: https://api.stima.ai/v1
-        zh_Hant: https://api.stima.ai/v1
+        en_US: https://api.stima.tech/v1
+        zh_Hant: https://api.stima.tech/v1
       help:
         en_US: Custom API endpoint (optional)
         zh_Hant: 自訂 API 端點（選填）
