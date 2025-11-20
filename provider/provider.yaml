@@ -4,7 +4,7 @@ identity:
   label:
     en_US: Stima API
     zh_Hant: Stima API 串接
-  icon: icon.svg
+  icon: icon.png
 
 description:
   en_US: Proxy
